@@ -1,4 +1,4 @@
-# deterministic-uuid-vs-newsequentialid
+# deterministic-uuid-vs- database generated ID (newsequentialid)
 
 
 ## Overview
