@@ -1,8 +1,9 @@
-# GuidDemo
+# deterministic-uuid-vs-newsequentialid
+
 
 ## Overview
 
-GuidDemo is a .NET 8 console application that demonstrates the performance and design trade-offs between two approaches for handling primary and foreign keys in SQL Server tables using GUIDs:
+This is a .NET 8 console application that demonstrates the performance and design trade-offs between two approaches for handling primary and foreign keys in SQL Server tables using GUIDs:
 
 - **Scenario A:** Database-generated GUIDs (`NEWSEQUENTIALID()`) as clustered primary keys, requiring SELECTs to resolve foreign keys.
 - **Scenario B:** Deterministic GUIDs (UUID v5-style) generated in application code, allowing foreign keys to be computed without database lookups.
@@ -101,9 +102,9 @@ Typical performance improvements with deterministic GUIDs:
 
 ## Key Files
 
-- `DbCreation.sql` – SQL script to create and clean up tables.
-- `Program.cs` – Main application logic and performance test framework.
-- `GuidDemo.csproj` – Project configuration with package dependencies.
+- `DbCreation.sql` â€“ SQL script to create and clean up tables.
+- `Program.cs` â€“ Main application logic and performance test framework.
+- `GuidDemo.csproj` â€“ Project configuration with package dependencies.
 
 ## Technical Notes
 
